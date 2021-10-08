@@ -10,6 +10,7 @@
 		3FBFFB5F2710458C003FF237 /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FBFFB5E2710458C003FF237 /* CalendarKit */; };
 		3FBFFB6527104707003FF237 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFFB6427104707003FF237 /* CalendarViewController.swift */; };
 		3FBFFB6727104715003FF237 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBFFB6627104715003FF237 /* Calendar.storyboard */; };
+		3FBFFB7427104EDF003FF237 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBFFB7227104EDF003FF237 /* NotificationManager.swift */; };
 		3FDCC5E9270F272D00031D5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCC5E8270F272D00031D5C /* AppDelegate.swift */; };
 		3FDCC5EB270F272D00031D5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCC5EA270F272D00031D5C /* SceneDelegate.swift */; };
 		3FDCC5ED270F272D00031D5C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCC5EC270F272D00031D5C /* MainViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3FBFFB6427104707003FF237 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		3FBFFB6627104715003FF237 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		3FBFFB7227104EDF003FF237 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		3FDCC5E5270F272D00031D5C /* WeeklyCalendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeeklyCalendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDCC5E8270F272D00031D5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDCC5EA270F272D00031D5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = CalendarScene;
 			sourceTree = "<group>";
 		};
+		3FBFFB7127104EDF003FF237 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3FBFFB7227104EDF003FF237 /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		3FDCC5DC270F272C00031D5C = {
 			isa = PBXGroup;
 			children = (
@@ -98,9 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				3FDCC5FC270F290000031D5C /* App */,
+				3FBFFB7127104EDF003FF237 /* Managers */,
 				3FBFFB60271045A8003FF237 /* Presentation */,
-				3FDCC5F1270F273100031D5C /* Assets.xcassets */,
 				3FDCC5F3270F273100031D5C /* LaunchScreen.storyboard */,
+				3FDCC5F1270F273100031D5C /* Assets.xcassets */,
 				3FDCC5F6270F273100031D5C /* Info.plist */,
 			);
 			path = WeeklyCalendar;
@@ -197,6 +208,7 @@
 				3FDCC5ED270F272D00031D5C /* MainViewController.swift in Sources */,
 				3FDCC5E9270F272D00031D5C /* AppDelegate.swift in Sources */,
 				3FDCC5EB270F272D00031D5C /* SceneDelegate.swift in Sources */,
+				3FBFFB7427104EDF003FF237 /* NotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

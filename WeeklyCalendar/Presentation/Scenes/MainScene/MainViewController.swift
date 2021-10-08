@@ -8,16 +8,19 @@
 import UIKit
 
 class MainViewController: UIViewController {
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func onOpenCalendar(_ sender: Any) {
         let sb = UIStoryboard(name: "Calendar", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "CalendarViewController")
-        navigationController?.pushViewController(vc, animated: true)
+        vc.modalPresentationStyle = .overCurrentContext
+        vc.modalTransitionStyle = .crossDissolve
+        present(vc, animated: true)
     }
 }
 
